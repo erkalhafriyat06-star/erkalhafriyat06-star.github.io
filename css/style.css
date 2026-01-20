@@ -1,0 +1,39 @@
+/* Custom Styles for Erkal Hafriyat */
+
+/* Ken Burns Animation for Hero Image */
+@keyframes kenburns {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+.animate-kenburns {
+    animation: kenburns 20s ease-out infinite alternate;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0A192F;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #112240;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #F2994A;
+}
+
+/* Typography Enhancements */
+.font-display {
+    font-feature-settings: "ss01", "ss02";
+}

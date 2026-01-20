@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erkal Hafriyat | Geleceği İnşa Ediyoruz</title>
+
+    <!-- Meta Tags for SEO -->
+    <meta name="description"
+        content="Ankara'nın lider hafriyat ve inşaat firması. 30 yıllık tecrübe, dev makine parkı ve uzman kadro ile hizmetinizdeyiz.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            900: '#0A192F',
+                            800: '#112240',
+                        },
+                        amber: {
+                            500: '#F2994A',
+                            600: '#F2C94C',
+                        },
+                        platinum: '#E5E5E5',
+                        concrete: '#F3F4F6'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Space Grotesk', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="bg-concrete text-gray-900 overflow-x-hidden">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 transition-all duration-300 bg-navy-900/90 backdrop-blur-md border-b border-navy-800"
+        id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="#" class="flex items-center gap-2">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZvyZfQ2UQpDUAb65eLeidl5EH8ewA8EMCfw&s"
+                            alt="Erkal Hafriyat Logo" class="h-12 w-auto rounded object-cover">
+                        <span class="font-display font-bold text-2xl text-white tracking-wide">ERKAL<span
+                                class="text-amber-500">.</span></span>
+                    </a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="font-medium text-white hover:text-amber-500 transition-colors">Ana
+                            Sayfa</a>
+                        <a href="#company"
+                            class="font-medium text-gray-300 hover:text-white transition-colors">Kurumsal</a>
+                        <a href="#services"
+                            class="font-medium text-gray-300 hover:text-white transition-colors">Hizmetler</a>
+                        <a href="#projects"
+                            class="font-medium text-gray-300 hover:text-white transition-colors">Projeler</a>
+                        <a href="#equipment" class="font-medium text-gray-300 hover:text-white transition-colors">Makine
+                            Parkı</a>
+                        <a href="#contact"
+                            class="px-5 py-2.5 bg-amber-500 hover:bg-amber-600 text-navy-900 font-bold rounded shadow-lg hover:shadow-amber-500/20 transition-all transform hover:-translate-y-0.5">
+                            Teklif Al
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button"
+                        class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-navy-800 focus:outline-none"
+                        aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Menüyü aç</span>
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 bg-navy-900/40 z-10"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-navy-900 via-transparent to-transparent z-10"></div>
+        <div class="absolute inset-0 z-0">
+            <img src="images/giriş_sayfasi_1.jpeg"
+                alt="Construction Site" class="w-full h-full object-cover animate-kenburns" loading="lazy">
+        </div>
+
+        <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:text-left pt-20">
+            <h1 class="font-display font-bold text-5xl sm:text-7xl text-white leading-tight mb-6 drop-shadow-lg">
+                <span class="block">Geleceği</span>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-amber-200">İnşa
+                    Ediyoruz.</span>
+            </h1>
+            <p class="mt-4 max-w-2xl text-xl text-gray-200 font-light mb-10 drop-shadow-md">
+                30 yıllık tecrübe ve modern teknoloji ile Ankara'nın en güvenilir hafriyat, yıkım ve altyapı çözümleri.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center sm:justify-start">
+                <a href="#contact"
+                    class="px-8 py-4 bg-amber-500 hover:bg-amber-600 text-navy-900 font-bold text-lg rounded shadow-xl hover:shadow-amber-500/30 transition-all transform hover:-translate-y-1 flex items-center justify-center gap-2">
+                    <span>Hemen Teklif Al</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#projects"
+                    class="px-8 py-4 bg-transparent border-2 border-white/30 hover:border-white text-white font-semibold text-lg rounded backdrop-blur-sm hover:bg-white/10 transition-all flex items-center justify-center">
+                    Projelerimizi İncele
+                </a>
+            </div>
+        </div>
+
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20 animate-bounce">
+            <a href="#company" class="text-white hover:text-amber-500 transition-colors">
+                <i class="fas fa-chevron-down text-3xl"></i>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Corporate Section -->
+        <section id="company" class="py-20 sm:py-32 bg-white overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+                    <div class="relative mb-12 lg:mb-0 group">
+                        <div
+                            class="absolute inset-0 bg-amber-500 rounded-2xl transform translate-x-3 translate-y-3 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform">
+                        </div>
+                        <img src="images/tepedençok.jpeg"
+                            alt="Erkal Saha Ekibi" loading="lazy"
+                            class="relative rounded-2xl shadow-2xl w-full object-cover h-[500px] grayscale transition-all duration-500 group-hover:grayscale-0">
+                        <div
+                            class="absolute -bottom-6 -right-6 bg-navy-900 p-8 rounded-xl shadow-xl text-white hidden sm:block">
+                            <div class="text-4xl font-bold text-amber-500 mb-1">30+</div>
+                            <div class="text-sm font-light uppercase tracking-wider">Yıllık Tecrübe</div>
+                        </div>
+                    </div>
+                    <div>
+                        <span
+                            class="text-amber-600 font-bold tracking-wider uppercase text-sm mb-2 block">Kurumsal</span>
+                        <h2 class="font-display font-bold text-4xl sm:text-5xl text-navy-900 mb-6 leading-tight">
+                            Sadece Hafriyat Değil, <br>
+                            <span class="text-amber-500">Çözüm Ortağınız.</span>
+                        </h2>
+                        <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                            Erkal Hafriyat olarak, 1996'dan beri Ankara'nın en zorlu projelerinde imzamız var.
+                            Teknolojik makine parkımız ve uzman mühendis kadromuzla, sadece toprağı değil, projenizin
+                            geleceğini de şekillendiriyoruz.
+                        </p>
+                        <dl class="grid grid-cols-2 gap-x-8 gap-y-8 mb-10">
+                            <div>
+                                <dt class="text-3xl font-bold text-navy-900">500+</dt>
+                                <dd class="text-gray-500 text-sm mt-1">Tamamlanan Proje</dd>
+                            </div>
+                            <div>
+                                <dt class="text-3xl font-bold text-navy-900">%100</dt>
+                                <dd class="text-gray-500 text-sm mt-1">Müşteri Memnuniyeti</dd>
+                            </div>
+                        </dl>
+                        <a href="#company"
+                           class="inline-flex items-center text-navy-900 font-bold hover:text-amber-600 transition-colors group">
+                            <!-- Kurumsal Hikayemiz -->
+                            <!-- <i -->
+                                <!-- class="fas fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform"></i> -->
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section (Dynamic) -->
+        <section id="services" class="py-20 bg-concrete relative">
+            <div class="absolute top-0 right-0 w-1/3 h-full bg-platinum/50 skew-x-12 pointer-events-none"></div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-amber-600 font-bold tracking-wider uppercase text-sm">Hizmetlerimiz</span>
+                    <h2 class="font-display font-bold text-4xl sm:text-5xl text-navy-900 mt-2">Endüstriyel Çözümler</h2>
+                    <p class="mt-4 text-gray-600 text-lg">Projenizin ihtiyaç duyduğu tüm altyapı ve saha hizmetleri tek
+                        noktada.</p>
+                </div>
+                <!-- Dynamic Content Container -->
+                <div id="services-container" class="grid md:grid-cols-3 gap-8"></div>
+            </div>
+        </section>
+
+        <!-- Projects Section (Dynamic) -->
+        <section id="projects" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row justify-between items-center mb-16">
+                    <div>
+                        <span class="text-amber-600 font-bold tracking-wider uppercase text-sm">Referanslarımız</span>
+                        <h2 class="font-display font-bold text-4xl text-navy-900 mt-2">Gurur Tablomuz</h2>
+                    </div>
+                    <div class="mt-6 md:mt-0">
+                        <a href="projects.html"
+                            class="text-navy-900 font-bold hover:text-amber-600 transition-colors">Tüm Projeleri Gör <i
+                                class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+                <!-- Dynamic Content Container -->
+                <div id="projects-container" data-page="home"
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+
+                <div class="mt-12 text-center">
+                    <a href="projects.html"
+                        class="px-8 py-3 border-2 border-navy-900 text-navy-900 font-bold rounded hover:bg-navy-900 hover:text-white transition-all inline-flex items-center gap-2 group">
+                        Tüm Projeleri İncele
+                        <i class="fas fa-arrow-right transform group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Equipment Section (Dynamic) -->
+        <section id="equipment" class="py-20 bg-navy-900 text-white overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="mb-12">
+                    <span class="text-amber-500 font-bold tracking-wider uppercase text-sm">Makine Parkımız</span>
+                    <h2 class="font-display font-bold text-4xl mt-2">Gücümüz, Ekipmanımız.</h2>
+                    <p class="mt-4 text-gray-400 max-w-2xl">En son teknoloji iş makineleri ve düzenli bakımı yapılan dev
+                        filomuz ile her ölçekteki işe hazırız.</p>
+                </div>
+                <!-- Dynamic Content Container (Horizontal Scroll) -->
+                <div id="equipment-container" class="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-8"
+                    style="scrollbar-width: none; -ms-overflow-style: none;"></div>
+
+                <div class="mt-12 text-center">
+                    <a href="equipment.html"
+                        class="px-8 py-3 border-2 border-amber-500 text-amber-500 font-bold rounded hover:bg-amber-500 hover:text-navy-900 transition-all inline-flex items-center gap-2 group">
+                        Tüm Ekipmanlarımız
+                        <i class="fas fa-arrow-right transform group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-gradient-to-r from-amber-500 to-amber-600 relative overflow-hidden">
+            <div
+                class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-10">
+            </div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+                <h2 class="font-display font-bold text-4xl text-navy-900 mb-6">Projeniz Beklemesin.</h2>
+                <p class="text-navy-900/80 text-xl font-medium mb-10 max-w-2xl mx-auto">
+                    Hemen şimdi uzman ekibimizle görüşün, ücretsiz keşif ve fiyat teklifi avantajından yararlanın.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#"
+                        class="dynamic-phone px-8 py-4 bg-navy-900 text-white font-bold rounded shadow-xl hover:bg-navy-800 transition-colors flex items-center justify-center gap-3">
+                        <i class="fas fa-phone-alt"></i>
+                        Loading...
+                    </a>
+                    <a href="#" target="_blank"
+                        class="dynamic-whatsapp-btn px-8 py-4 bg-white text-green-600 font-bold rounded shadow-xl hover:bg-gray-100 transition-colors flex items-center justify-center gap-3">
+                        <i class="fab fa-whatsapp text-xl"></i>
+                        WhatsApp'tan Yaz
+                    </a>
+                </div>
+                <div class="mt-12 rounded-xl overflow-hidden shadow-2xl border-4 border-white/20">
+                    <!-- Google Maps Mini Map -->
+                    <iframe class="dynamic-map-iframe" src="" width="100%" height="400" style="border:0;"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-navy-900 border-t border-navy-800 text-white pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <!-- Col 1: Brand -->
+                <div>
+                    <a href="#" class="flex items-center gap-2 mb-6">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZvyZfQ2UQpDUAb65eLeidl5EH8ewA8EMCfw&s"
+                            alt="Erkal Hafriyat Logo" class="h-12 w-auto rounded object-cover">
+                        <span class="font-display font-bold text-2xl text-white tracking-wide">ERKAL<span
+                                class="text-amber-500">.</span></span>
+                    </a>
+                    <p class="text-gray-400 leading-relaxed mb-6">
+                        Ankara'nın geleceğini inşa eden güvenilir çözüm ortağınız. Hafriyat, yıkım ve altyapı
+                        projelerinde 30 yıllık tecrübe.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#"
+                           class="dynamic-instagram w-10 h-10 rounded bg-navy-800 flex items-center justify-center hover:bg-amber-500 hover:text-navy-900 transition-colors"
+                           target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#"
+                            class="dynamic-facebook w-10 h-10 rounded bg-navy-800 flex items-center justify-center hover:bg-amber-500 hover:text-navy-900 transition-colors"
+                            target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <!-- <a href="#" -->
+                            <!-- class="w-10 h-10 rounded bg-navy-800 flex items-center justify-center hover:bg-amber-500 hover:text-navy-900 transition-colors"><i -->
+                                <!-- class="fab fa-linkedin-in"></i></a> -->
+                    </div>
+                </div>
+
+                <!-- Col 2: Quick Links -->
+                <div>
+                    <h3 class="font-bold text-lg mb-6 text-white border-b border-amber-500 inline-block pb-1">Hızlı
+                        Erişim</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#home"
+                                class="text-gray-400 hover:text-white hover:translate-x-1 transition-all inline-block">Ana
+                                Sayfa</a></li>
+                        <li><a href="#company"
+                                class="text-gray-400 hover:text-white hover:translate-x-1 transition-all inline-block">Kurumsal</a>
+                        </li>
+                        <li><a href="#projects"
+                                class="text-gray-400 hover:text-white hover:translate-x-1 transition-all inline-block">Projeler</a>
+                        </li>
+                        <li><a href="#equipment"
+                                class="text-gray-400 hover:text-white hover:translate-x-1 transition-all inline-block">Makine
+                                Parkı</a></li>
+                        <li><a href="#contact"
+                                class="text-gray-400 hover:text-white hover:translate-x-1 transition-all inline-block">İletişim</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Services -->
+                <div>
+                    <h3 class="font-bold text-lg mb-6 text-white border-b border-amber-500 inline-block pb-1">
+                        Hizmetlerimiz</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#"
+                                class="text-gray-400 hover:text-white hover:translate-x-1 transition-all inline-block">Hafriyat
+                                & Kazı</a></li>
+                        <li><a href="#"
+                                class="text-gray-400 hover:text-white hover:translate-x-1 transition-all inline-block">Yol
+                                Yapımı</a></li>
+                        <li><a href="#"
+                                class="text-gray-400 hover:text-white hover:translate-x-1 transition-all inline-block">Bina
+                                Yıkımı</a></li>
+                        <li><a href="#"
+                                class="text-gray-400 hover:text-white hover:translate-x-1 transition-all inline-block">Kiralık
+                                İş Makinesi</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Contact Info -->
+                <div>
+                    <h3 class="font-bold text-lg mb-6 text-white border-b border-amber-500 inline-block pb-1">Bize
+                        Ulaşın</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-map-marker-alt text-amber-500 mt-1"></i>
+                            <span class="text-gray-400 dynamic-address">Loading...</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-phone text-amber-500"></i>
+                            <span class="text-gray-400 dynamic-phone">Loading...</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-envelope text-amber-500"></i>
+                            <span class="text-gray-400 dynamic-email">Loading...</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div
+                class="border-t border-navy-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+                <p>&copy; 2026 Erkal Hafriyat. Tüm hakları saklıdır.</p>
+                <div class="flex gap-6 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white transition-colors">KVKK</a>
+                    <a href="#" class="hover:text-white transition-colors">Gizlilik Politikası</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/config.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makine Parkımız | Erkal Hafriyat</title>
+
+    <!-- Meta Tags for SEO -->
+    <meta name="description"
+        content="Erkal Hafriyat makine parkı envanteri. Ekskavatörler, kamyonlar, iş makineleri ve kapasite bilgileri.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            900: '#0A192F',
+                            800: '#112240',
+                        },
+                        amber: {
+                            500: '#F2994A',
+                            600: '#F2C94C',
+                        },
+                        platinum: '#E5E5E5',
+                        concrete: '#F3F4F6'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Space Grotesk', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="bg-concrete text-gray-900 overflow-x-hidden">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-navy-900 border-b border-navy-800" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="flex items-center gap-2">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZvyZfQ2UQpDUAb65eLeidl5EH8ewA8EMCfw&s"
+                            alt="Erkal Hafriyat Logo" class="h-12 w-auto rounded object-cover">
+                        <span class="font-display font-bold text-2xl text-white tracking-wide">ERKAL<span
+                                class="text-amber-500">.</span></span>
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html" class="font-medium text-gray-300 hover:text-white transition-colors">Ana
+                            Sayfa</a>
+                        <a href="index.html#company"
+                            class="font-medium text-gray-300 hover:text-white transition-colors">Kurumsal</a>
+                        <a href="index.html#services"
+                            class="font-medium text-gray-300 hover:text-white transition-colors">Hizmetler</a>
+                        <a href="projects.html"
+                            class="font-medium text-gray-300 hover:text-white transition-colors">Projeler</a>
+                        <a href="#" class="font-medium text-amber-500 transition-colors">Makine Parkı</a>
+                        <a href="index.html#contact"
+                            class="px-5 py-2.5 bg-amber-500 hover:bg-amber-600 text-navy-900 font-bold rounded shadow-lg hover:shadow-amber-500/20 transition-all">
+                            Teklif Al
+                        </a>
+                    </div>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button"
+                        class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-navy-800 focus:outline-none"
+                        aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Menüyü aç</span>
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="bg-navy-900 pt-32 pb-20 relative overflow-hidden">
+        <div
+            class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-10">
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <span class="text-amber-500 font-bold tracking-wider uppercase text-sm">Gücümüz</span>
+            <h1 class="font-display font-bold text-4xl sm:text-6xl text-white mt-4 mb-6">Makine Parkımız</h1>
+            <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+                Büyük projelerin üstesinden gelmek için gereken güç ve kapasite. Geniş filomuz her an göreve hazır.
+            </p>
+        </div>
+    </header>
+
+    <!-- Equipment List Section -->
+    <main class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <!-- Dynamic Grid Container -->
+            <div id="equipment-container" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- JS Populates Here -->
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-navy-900 border-t border-navy-800 text-white pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <!-- Col 1: Brand -->
+                <div>
+                    <a href="index.html" class="flex items-center gap-2 mb-6">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZvyZfQ2UQpDUAb65eLeidl5EH8ewA8EMCfw&s"
+                            alt="Erkal Hafriyat Logo" class="h-12 w-auto rounded object-cover">
+                        <span class="font-display font-bold text-2xl text-white tracking-wide">ERKAL<span
+                                class="text-amber-500">.</span></span>
+                    </a>
+                    <p class="text-gray-400 leading-relaxed mb-6">
+                        Ankara'nın geleceğini inşa eden güvenilir çözüm ortağınız.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#"
+                            class="dynamic-facebook w-10 h-10 rounded bg-navy-800 flex items-center justify-center hover:bg-amber-500 hover:text-navy-900 transition-colors"
+                            target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"
+                            class="dynamic-instagram w-10 h-10 rounded bg-navy-800 flex items-center justify-center hover:bg-amber-500 hover:text-navy-900 transition-colors"
+                            target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded bg-navy-800 flex items-center justify-center hover:bg-amber-500 hover:text-navy-900 transition-colors"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <!-- Contact Minimal -->
+                <div>
+                    <h3 class="font-bold text-lg mb-6 text-white border-b border-amber-500 inline-block pb-1">İletişim
+                    </h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-phone text-amber-500"></i>
+                            <span class="text-gray-400 dynamic-phone">Loading...</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div
+                class="border-t border-navy-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+                <p>&copy; 2026 Erkal Hafriyat. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/config.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
