@@ -1,6 +1,11 @@
 /* Custom Styles for Erkal Hafriyat */
 
 /* Ken Burns Animation for Hero Image */
+html, body {
+    touch-action: manipulation; /* Çift tıklama ile zoom yapmayı engeller */
+    -webkit-user-select: none;  /* Metin seçimini engeller (isteğe bağlı) */
+    overflow-x: hidden;         /* Yatay kaydırmayı engeller */
+}
 @keyframes kenburns {
     0% {
         transform: scale(1);
@@ -36,4 +41,5 @@
 /* Typography Enhancements */
 .font-display {
     font-feature-settings: "ss01", "ss02";
+
 }
