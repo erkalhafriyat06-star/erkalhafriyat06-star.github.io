@@ -3,7 +3,7 @@
 /* Ken Burns Animation for Hero Image */
 html, body {
     touch-action: manipulation; /* Çift tıklama ile zoom yapmayı engeller */
-    -webkit-user-select: none;  /* Metin seçimini engeller (isteğe bağlı) */
+    -webkit-user-select: none;  /* Metin seçimini engeller  */
     overflow-x: hidden;         /* Yatay kaydırmayı engeller */
 }
 @keyframes kenburns {
@@ -43,3 +43,4 @@ html, body {
     font-feature-settings: "ss01", "ss02";
 
 }
+
